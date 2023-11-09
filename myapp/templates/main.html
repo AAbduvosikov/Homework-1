@@ -1,0 +1,24 @@
+<html>
+    <title>Homework--1</title>
+    <body>
+        <h1>Mashinalar ro'yhati</h1>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Price</th>
+                <th>Color</th>
+            </thead>
+            <tbody>
+                {% for user in content %}
+                <tr>
+                    <td>{{user.Name}}</td>
+                    <td>{{user.Year}}</td>
+                    <td>{{user.Price}}</td>
+                    <td>{{user.Color}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
